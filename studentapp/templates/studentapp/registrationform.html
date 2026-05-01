@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="{% static 'studentapp/css/style.css' %}">
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <!-- {{ form.as_p }} -->
+    {% for field in form %}
+     
+    
+      <div class="form-group">
+        {{ field.label_tag}}
+        {{field}}
+
+        {% if field.errors %}
+        <div class="error">
+            {{ field.errors }}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+<script src="{% static 'studentapp/js/main.js' %}"></script>
+
+
+</body>
+</html>

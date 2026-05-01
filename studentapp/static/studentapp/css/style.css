@@ -1,0 +1,31 @@
+body {
+    background-color: pink;
+}
+input, textarea {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+form {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-error {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
