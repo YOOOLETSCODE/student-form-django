@@ -29,3 +29,30 @@ button {
     color: red;
     font-size: 12px;
 }
+/* 🌥️ Toast container */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    animation: slideIn 0.3s ease;
+}
+
+/* animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

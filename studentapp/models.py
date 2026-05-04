@@ -7,7 +7,7 @@ phone_validator = RegexValidator(
 )
 
 # Create your models here.
-class student(models.Model):
+class Student(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.CharField(max_length=10, validators=[phone_validator])

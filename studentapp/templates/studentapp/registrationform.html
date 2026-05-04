@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="{% static 'studentapp/css/style.css' %}">
 </head>
 <body>
+    <div id="toast" class="toast"></div>
 
-<h2>Student Registration Form</h2>
+<h1>Student Registration Form</h1>
 
 <form method="POST">
     {% csrf_token %}
